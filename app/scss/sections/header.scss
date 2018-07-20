@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 1;
   padding: 27px 0;
   background-color: $white;
   box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.15);

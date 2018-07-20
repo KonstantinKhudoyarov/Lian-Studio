@@ -1,0 +1,116 @@
+.slider {
+  position: relative;
+  height: 650px;
+  @include flex-align();
+  background-image: url('../images/slider-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__header {
+  text-align: center;
+}
+
+.caption__heading-wrap {
+  display: inline-block;
+  padding: 0 41px 0 46px;
+  margin-bottom: 33px;
+  background-color: $black;
+}
+
+.caption__heading {
+  @include roboto(light);
+  @include font(48px, 1.1);
+  color: $white;
+  text-transform: uppercase;
+}
+
+.caption__sub-heading {
+  @include roboto(light);
+  @include font(18px, 1.33);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  @include flex-align();
+  width: 44px;
+  height: 44px;
+  border: 1px solid $white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: -8px;
+    border-top: 1px solid $white;
+    border-left: 1px solid $white;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    border-color: transparent;
+    background-color: $black;
+  }
+
+}
+
+.slider__control_left {
+  left: 112px;
+}
+
+.slider__control_right {
+  right: 112px;
+
+  &::before {
+    content: "";
+    margin-left: -14px;
+    transform: rotate(130deg);
+  }
+
+}
+
+/*-- bottom controls --*/
+.slider__bottom-controls {
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  font-size: 0;
+}
+
+.slider__bottom-control {
+  display: none;
+}
+
+#slide1:checked ~ .slider__bottom-label:nth-of-type(1),
+#slide3:checked ~ .slider__bottom-label:nth-of-type(3),
+#slide2:checked ~ .slider__bottom-label:nth-of-type(2) {
+  background-color: $black;
+}
+
+.slider__bottom-label {
+  @include flex-align(inline-flex);
+  width: 14px;
+  height: 14px;
+  margin-right: 17px;
+  background-color: $white;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $white;
+  }
+
+}
