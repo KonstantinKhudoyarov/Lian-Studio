@@ -7,6 +7,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var livereload = require('gulp-livereload');
 var connect = require('gulp-connect');
 var sass = require('gulp-sass');
+var wait = require('gulp-wait');
 
 //server connect
 gulp.task('connect', function() {
@@ -19,6 +20,7 @@ gulp.task('connect', function() {
 //css
 gulp.task('scss', function() {
   gulp.src('app/scss/main.scss')
+    .pipe(wait(300))
     .pipe(sass())
     .pipe(autoprefixer({
             browsers: ['last 10 versions'],
