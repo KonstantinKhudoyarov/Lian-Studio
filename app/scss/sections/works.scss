@@ -6,6 +6,11 @@
     margin-bottom: 29px;
 }
 
+.projects__wrap {
+    @extend %clearfix;
+    margin-bottom: 36px;
+}
+
 .projects__column {
     float: left;
     width: 360px;
@@ -30,4 +35,8 @@
 .projects__img {
     display: block;
     max-width: 100%;
+}
+
+.projects__button {
+    text-align: center;
 }

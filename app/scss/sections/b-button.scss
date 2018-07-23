@@ -1,0 +1,12 @@
+.btn {
+    padding: 6px 27px;
+    @include font(13px, 1.6);
+    @include roboto(bold);
+    color: $white;
+    background-color: #959595;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
