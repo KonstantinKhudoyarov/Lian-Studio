@@ -23,8 +23,42 @@
 }
 
 .projects__row {
+    position: relative;
     width: 360px;
     margin-bottom: 35px;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: .3s;
+    }
+
+    &:hover {
+        &::before {
+            background-color: rgba(0,0,0, .5);
+        }
+    }
+
+    &::after {
+        content: "";
+        @include absolute-center;
+        display: none;
+        width: 40px;
+        height: 40px;
+        background: url('../images/icons/cross-icon.png') 0 0 no-repeat;
+        transition: .3s;
+    }
+
+    &:hover {
+        &::after {
+            display: inline-block;
+        }
+    }
 
     &:last-of-type {
         margin-bottom: 0;
