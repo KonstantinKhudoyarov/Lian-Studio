@@ -1,0 +1,98 @@
+.intro {
+
+    .container {
+        @extend %clearfix;
+    }
+
+    padding: 117px 0 120px 0;
+    background: url('../images/about-intro-background.png') 0 0 no-repeat;
+    background-size: cover;
+}
+
+/* about us */
+.about-us {
+    padding: 72px 0 0 0;
+}
+
+.about-us__pic {
+    float: left;
+    width: 531px;
+}
+
+.about-us__img {
+    max-width: 100%;
+}
+
+.about-us__content {
+    float: right;
+    width: 546px;
+}
+
+.about-us__header {
+    margin-bottom: 28px;
+    @include font(18px, 1.33);
+    @include roboto(light);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.about-us__story {
+    margin-bottom: 36px;
+}
+
+.about-us__story-text {
+    margin-bottom: 35px;
+    @include font(14px, 2.14);
+    @include roboto(regular);
+    color: #777;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+}
+
+/* skills */
+.skills__item {
+    margin-bottom: 22px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+}
+
+.skills__header {
+    @include font(16px, 1.4);
+    @include roboto(bold);
+    color: #2f302f;
+}
+
+.skills__diagram {
+    margin-top: 13px;
+    width: 100%;
+    height: 10px;
+    padding: 4px 0 4px 3px;
+    background-color: #ebebeb;
+}
+
+.skills__index {
+    height: 2px;
+    background-color: #a1a1a1;
+}
+
+.skills__index_photoshop {
+    width: 90%;
+}
+
+.skills__index_branding {
+    width: 95%;
+}
+
+.skills__index_photography {
+    width: 50%;
+}
+
+.skills__index_design {
+    width: 85%;
+}
