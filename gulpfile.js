@@ -41,7 +41,7 @@ gulp.task('html', function() {
 //watch
 gulp.task('watch', function(){
     gulp.watch(['app/scss/main.scss', 'app/scss/_misc/*.scss', 'app/scss/sections/*.scss'],  ['scss'])
-    gulp.watch('dist/index.html', ['html']);
+    gulp.watch(['dist/index.html', 'dist/pages/*.html'], ['html']);
 });
 
 //default
