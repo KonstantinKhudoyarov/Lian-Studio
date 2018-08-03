@@ -1,0 +1,14 @@
+.intro {
+
+    .container {
+        @extend %clearfix;
+    }
+
+    padding: 117px 0 120px 0;
+    background: url('../images/about-intro-background.png') 0 0 no-repeat;
+    background-size: cover;
+}
+
+.intro_details {
+    background: url('../images/details-background.png') 0 0 no-repeat;
+}

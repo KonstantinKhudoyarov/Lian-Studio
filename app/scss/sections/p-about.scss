@@ -1,14 +1,3 @@
-.intro {
-
-    .container {
-        @extend %clearfix;
-    }
-
-    padding: 117px 0 120px 0;
-    background: url('../images/about-intro-background.png') 0 0 no-repeat;
-    background-size: cover;
-}
-
 /* about us */
 .about-us {
     padding: 72px 0 0 0;
@@ -157,7 +146,9 @@
     text-align: center;
 }
 
-.team__header {
+
+/* definition block */
+.definition__header {
     margin-bottom: 30px;
     @include font(30px, 1.4);
     @include roboto(light);
@@ -165,7 +156,7 @@
     letter-spacing: 10px;
 }
 
-.team__desc {
+.definition__desc {
     @include font(14px, 2.14);
     color: #777;
 }

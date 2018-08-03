@@ -7,55 +7,7 @@
     padding: 24px 0;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
-}
-
-.socials {
-    font-size: 0;
     text-align: center;
-}
-
-.socials__item {
-    @include inline-block();
-    margin-right: 57px;
-
-    &:last-of-type {
-        margin-right: 0;
-    }
-
-}
-
-.socials__link {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-}
-
-.socials__link_fb {
-    background: url('../images/icons/socials.png') 0 0 no-repeat;
-}
-
-.socials__link_g {
-    background: url('../images/icons/socials.png') -64px 0 no-repeat;
-}
-
-.socials__link_tw {
-    background: url('../images/icons/socials.png') -134px 0 no-repeat;
-}
-
-.socials__link_in {
-    background: url('../images/icons/socials.png') -204px 0 no-repeat;
-}
-
-.socials__link_drb {
-    background: url('../images/icons/socials.png') -272px 0 no-repeat;
-}
-
-.socials__link_pi {
-    background: url('../images/icons/socials.png') -341px 0 no-repeat;
-}
-
-.socials__link_ins {
-    background: url('../images/icons/socials.png') -408px 0 no-repeat;
 }
 
 .footer__copyright {
